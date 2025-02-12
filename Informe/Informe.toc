@@ -1,0 +1,10 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Análisis de Euler mejorado}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Introducción}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Método de Euler}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Método de Euler Mejorado}{4}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Nueva visita a los números famosos}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Número e}{6}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Número ln2}{6}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Número $\pi $}{6}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Investigación de la población logística}{7}{section.3}%

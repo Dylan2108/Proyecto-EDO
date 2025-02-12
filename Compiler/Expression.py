@@ -53,3 +53,9 @@ class CosFunction(Expression):
         self.expression = expression
     def Evaluate(self, scope: Scope):
         return np.cos(self.expression.Evaluate(scope))
+class NegativeFunction(Expression):
+    def __init__(self,function : Expression):
+        self.function = function
+    def Evaluate(self, scope : Scope):
+        func_value = self.function.Evaluate(scope)
+        return -1 * func_value

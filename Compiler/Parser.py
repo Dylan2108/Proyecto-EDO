@@ -6,6 +6,7 @@ from Compiler.Expression import NumberExpression
 from Compiler.Expression import GroupingExpression
 from Compiler.Expression import BinaryExpression
 from Compiler.Expression import VariableExpression
+from Compiler.Expression import NegativeFunction
 class Parser:
     def __init__(self,tokens : []):
         self.tokens = tokens
@@ -58,6 +59,9 @@ class Parser:
             return VariableExpression(self.Previous().value)
         raise Exception("Expresion inesperada")
     def ParseLiteral(self):
+        if self.Match([TokenType.Less]):
+            expression = self.ParseLiteral()
+            return NegativeFunction(expression)
         if self.Match([TokenType.Numbers]):
             return NumberExpression(float(self.Previous().value))
         if self.Match([TokenType.LeftParenthesis]):
