@@ -6,7 +6,7 @@ class Lexer:
         self.tokens = []
         self.start = 0
         self.current = 0
-        self.Keywords = {"sen" : Token("Sen",TokenType.SenFunction,"Sen"),"cos" : Token("Cos",TokenType.CosFunction,"Cos")}
+        self.Keywords = {"sin" : Token("Sen",TokenType.SenFunction,"Sen"),"cos" : Token("Cos",TokenType.CosFunction,"Cos")}
     def IsAtEnd(self):
         #Verifica si ya se llego al final del texto
         return self.current >= len(self.input)
